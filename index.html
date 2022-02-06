@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;500&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Order summary card</title>
+
+  <!-- Feel free to }|emove these styles or customise in your own stylesheet 👍 -->
+  <style>
+   
+    body{
+      background-color: hsl(225, 100%, 94%);
+      font-size: 16px;
+      display: grid;
+      place-items: center;
+      height: 100vh;
+      font-family: 'Red Hat Display', sans-serif;
+    }
+    a{text-decoration: none;font-weight: bolder;}
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    .card{max-width:425px; box-shadow:0px 7px 56px 6px hsl(245deg 1% 23% / 18%);}
+    .card,.plan{border-radius: 10px; background-color: white; text-align:center;}
+    .card-img-top{ width: 100%;border-top-left-radius: 10px; border-top-right-radius: 10px;    }
+    .card-body{padding:30px 50px 50px 50px; color: hsl(224, 23%, 55%);}
+    .card-title,.annual-plan span:first-child{color: hsl(223, 47%, 23%); font-weight: bolder;}
+    .card-title{margin: 6px 0px;}
+    .plan{
+      display: flex;
+      padding:20px;
+      background-color: hsl(225, 100%, 98%) ;
+    }
+    .plan div:first-child{ flex: 1 1 0;}
+    .plan div:nth-child(2),.plan div:last-child{ 
+      flex:2 1 0; 
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-left: 5px;
+    }
+
+    .plan div:last-child{flex:1 1 0; text-align:center;}
+
+    .annual-plan span{display: block;}
+    .proceed-btn a{ 
+      display: inline-block;
+      width: 100%; 
+      padding:15px 0;
+      border-radius: 10px;
+      background-color: hsl(245, 75%, 52%);
+      color:hsl(225, 100%, 98%);
+      margin: 25px 0px;
+      box-shadow: 0px 7px 26px 6px hsl(245deg 75% 52% / 38%);
+    }
+    .proceed-btn a:hover,.proceed-btn a:active{
+      background-color:hsl(245, 38%, 56%);
+    }
+    
+    .cancel-btn a{ 
+      display:inline-block; color:hsl(224, 23%, 55%) ;
+      margin-bottom: 10px;
+     
+     }
+     .change-btn{ text-decoration: underline;}
+     .change-btn:hover{color:hsl(245, 38%, 56%)}
+     .cancel-btn a:hover{
+       color:hsl(223, 47%, 23%);
+       font-weight: 800;
+     }
+     @media (max-width:768px) {
+       .card{
+        margin: 15px;
+       }
+       .card-body{
+         padding-left: 24px;
+         padding-right: 24px;
+       }
+     }
+  </style>
+</head>
+<body>
+
+  <div class="card" >
+    <img src="/images/illustration-hero.svg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h2 class="card-title">Order Summary</h2>
+      <p class="card-text">  You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
+      <section class="plan">
+        <div class="music-icon">
+          <img src="images/icon-music.svg" alt="Music icon">
+        </div>
+        <div class="annual-plan"> 
+          <span>Annual Plan</span> 
+          <span>$59.99/year</span>
+        </div>
+        <div>
+          <a href="#" class="change-btn">change</a>
+        </div>
+      </section>
+      <div class="proceed-btn">
+        <a href="#">Proceed to Payment</a>
+      </div>
+      <div class="cancel-btn">
+        <a href="#">Cancel Order</a>
+      </div>
+    </div>
+  </div>
+
+  
+  
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="">Xulab</a>.
+  </div>
+</body>
+</html>
