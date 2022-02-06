@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Page Link](https://xulab5.github.io/order-summary/)
+- Live Site URL: [Page Link](https://xulab5.github.io/order-summary-v1/)
 
 ### Built with
 
